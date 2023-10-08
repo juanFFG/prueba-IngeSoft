@@ -42,7 +42,7 @@ class LoginPage extends StatelessWidget {
                         width: MediaQuery.of(context)
                             .size
                             .width, // Ancho deseado de la imagen
-                        height: 345, // Alto deseado de la imagen
+                        height: 340, // Alto deseado de la imagen
                         child: ClipRRect(
                           borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(20.0),
@@ -80,6 +80,8 @@ class LoginPage extends StatelessWidget {
                           style: TextStyle(
                               color: Color(0xff52d1dc),
                               fontFamily: 'Roboto',
+                              fontStyle: FontStyle.italic,
+                              fontWeight: FontWeight.bold,
                               fontSize: 20),
                         ),
                       ),
@@ -114,7 +116,7 @@ class LoginPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        main_Menu()),
+                        const main_menu()),
               );
             },
             style: ElevatedButton.styleFrom(
